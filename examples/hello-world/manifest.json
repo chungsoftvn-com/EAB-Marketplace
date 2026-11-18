@@ -1,0 +1,21 @@
+{
+  "id": "com.chungsoftvn.hello-world",
+  "name": "Hello World",
+  "version": "1.0.0",
+  "extension_type": "app",
+  "engine": "native",
+  "author": "chungsoftvn.com",
+  "description": "Minimal Hello World reference extension demonstrating EAB host APIs, theme integration, and file picking.",
+  "icon": "👋",
+  "ui": "ui.html",
+  "permissions": [
+    "gui.render",
+    "fs.read"
+  ],
+  "dependencies": {},
+  "app_dlls": [],
+  "api_version": "2.0",
+  "category": "other",
+  "start_with_eab": "no",
+  "show_in_toolbar": true
+}

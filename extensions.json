@@ -2,5 +2,20 @@
   "name": "EAB Official Marketplace",
   "description": "Official extension marketplace for EVE Asset Builder (EAB Tools) — converters, utilities, themes, widgets, and launchers.",
   "version": "1.0.0",
-  "extensions": []
+  "extensions": [
+    {
+      "id": "com.chungsoftvn.hello-world",
+      "name": "Hello World",
+      "version": "1.0.0",
+      "type": "app",
+      "author": "chungsoftvn.com",
+      "description": "Minimal Hello World reference extension demonstrating EAB host APIs, theme integration, and file picking.",
+      "downloads": 0,
+      "rating": 5.0,
+      "icon_url": null,
+      "package_url": "https://raw.githubusercontent.com/chungsoftvn-com/EAB-Marketplace/main/packages/com.chungsoftvn.hello-world.eabapk",
+      "homepage": "https://github.com/chungsoftvn-com/EAB-Marketplace/tree/main/examples/hello-world",
+      "repository": "https://github.com/chungsoftvn-com/EAB-Marketplace"
+    }
+  ]
 }

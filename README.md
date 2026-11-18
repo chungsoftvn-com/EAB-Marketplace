@@ -2,7 +2,7 @@
 
 Official extension marketplace repository for **EVE Asset Builder (`eab_tools.exe`)**.
 
-This repository hosts the catalog index (`extensions.json`) and submission guidelines for EAB extensions—including **Apps**, **Themes**, **Widgets**, and **Launchers**.
+This repository hosts the catalog index (`extensions.json`), a working **Hello World** reference extension, **AI agent skills/plugins** for building extensions with AI assistants, and submission guidelines for EAB extensions—including **Apps**, **Themes**, **Widgets**, and **Launchers**.
 
 ---
 
@@ -38,6 +38,33 @@ eab_tools.exe uninstall <extension_id>
 
 ---
 
+## Available Extensions
+
+| Name | ID | Type | Version | Package |
+| :--- | :--- | :--- | :--- | :--- |
+| **Hello World** | `com.chungsoftvn.hello-world` | `app` | `1.0.0` | [hello-world.eabapk](./packages/com.chungsoftvn.hello-world.eabapk) |
+
+---
+
+## Hello World Reference Example
+
+New to building EAB extensions? Start with [`examples/hello-world/`](./examples/hello-world/):
+- Demonstrates `manifest.json`, Bootstrap 5 + jQuery UI, `--eab-*` theme variables, and `API_EAB_*` host bridge calls (`API_EAB_init`, `API_EAB_getHostTheme`, `API_EAB_getWorkingDir`, `API_EAB_pickFile`, `API_EAB_log`).
+- Pre-packaged as [`packages/com.chungsoftvn.hello-world.eabapk`](./packages/com.chungsoftvn.hello-world.eabapk) and listed in [`extensions.json`](./extensions.json) so you can install it directly from the Marketplace.
+
+---
+
+## AI Agent Skills & Plugins
+
+Build a new EAB extension with an AI coding assistant (Antigravity, Claude Code, Cursor, GitHub Copilot, or Codex) using [`ai-skills/eab-extension-creator/`](./ai-skills/eab-extension-creator/):
+- [`SKILL.md`](./ai-skills/eab-extension-creator/SKILL.md) — Complete specification for `manifest.json`, `API_EAB_*` host bridge, theme CSS variables, `.eabapk` packaging, and testing.
+- [`plugin.json`](./ai-skills/eab-extension-creator/plugin.json) — Plugin manifest for AI agent plugin loaders.
+- [`templates/`](./ai-skills/eab-extension-creator/templates/) — Minimal starter `manifest.json`, `ui.html`, `ui.css`, and `ui.js`.
+
+See [`ai-skills/README.md`](./ai-skills/README.md) for installation instructions and example prompts.
+
+---
+
 ## Extension Types
 
 | Type | Description |
@@ -53,11 +80,17 @@ eab_tools.exe uninstall <extension_id>
 
 ```text
 EAB-Marketplace/
-├── extensions.json     # Marketplace catalog index read by EAB Tools
-├── packages/           # Optional directory for hosted .eabapk packages
-├── CONTRIBUTING.md     # Extension packaging & submission guidelines
-├── LICENSE             # MIT License
-└── README.md           # This file
+├── ai-skills/
+│   ├── README.md
+│   └── eab-extension-creator/  # AI agent skill, plugin.json, and starter templates
+├── examples/
+│   └── hello-world/            # Minimal working Hello World extension source
+├── packages/
+│   └── com.chungsoftvn.hello-world.eabapk
+├── extensions.json             # Marketplace catalog index read by EAB Tools
+├── CONTRIBUTING.md             # Extension packaging & submission guidelines
+├── LICENSE                     # MIT License
+└── README.md                   # This file
 ```
 
 ---

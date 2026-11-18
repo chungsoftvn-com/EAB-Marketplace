@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  background: var(--eab-bg, #1e1e1e);
+  color: var(--eab-text, #e5e5e5);
+}
+
+.card {
+  background: var(--eab-card-bg, #252526);
+  border: 1px solid var(--eab-border, #3c3c3c);
+  color: var(--eab-text, #e5e5e5);
+}

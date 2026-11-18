@@ -1,0 +1,10 @@
+{
+  "name": "eab-extension-creator",
+  "version": "1.0.0",
+  "description": "AI agent skill and starter templates for creating, packaging (.eabapk), and publishing EVE Asset Builder (EAB Tools) extensions.",
+  "author": "chungsoftvn.com",
+  "license": "MIT",
+  "skills": [
+    "./"
+  ]
+}
