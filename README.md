@@ -42,13 +42,13 @@ eab_tools.exe uninstall <extension_id>
 
 | Name | ID | Type | Version | Package |
 | :--- | :--- | :--- | :--- | :--- |
-| **Hello World** | `com.chungsoftvn.hello-world` | `app` | `1.0.0` | [hello-world.eabapk](./packages/com.chungsoftvn.hello-world.eabapk) |
+| **Hello World** | `com.chungsoftvn.hello-world` | `app` | `1.0.0` | [Source](./extensions/hello-world/) · [hello-world.eabapk](./packages/com.chungsoftvn.hello-world.eabapk) |
 
 ---
 
-## Hello World Reference Example
+## Hello World Extension
 
-New to building EAB extensions? Start with [`examples/hello-world/`](./examples/hello-world/):
+New to building EAB extensions? Start with [`extensions/hello-world/`](./extensions/hello-world/):
 - Demonstrates `manifest.json`, Bootstrap 5 + jQuery UI, `--eab-*` theme variables, and `API_EAB_*` host bridge calls (`API_EAB_init`, `API_EAB_getHostTheme`, `API_EAB_getWorkingDir`, `API_EAB_pickFile`, `API_EAB_log`).
 - Pre-packaged as [`packages/com.chungsoftvn.hello-world.eabapk`](./packages/com.chungsoftvn.hello-world.eabapk) and listed in [`extensions.json`](./extensions.json) so you can install it directly from the Marketplace.
 
@@ -83,8 +83,8 @@ EAB-Marketplace/
 ├── ai-skills/
 │   ├── README.md
 │   └── eab-extension-creator/  # AI agent skill, plugin.json, and starter templates
-├── examples/
-│   └── hello-world/            # Minimal working Hello World extension source
+├── extensions/
+│   └── hello-world/            # Hello World extension source
 ├── packages/
 │   └── com.chungsoftvn.hello-world.eabapk
 ├── extensions.json             # Marketplace catalog index read by EAB Tools

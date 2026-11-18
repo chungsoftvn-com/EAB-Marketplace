@@ -14,7 +14,7 @@
       "rating": 5.0,
       "icon_url": null,
       "package_url": "https://raw.githubusercontent.com/chungsoftvn-com/EAB-Marketplace/main/packages/com.chungsoftvn.hello-world.eabapk",
-      "homepage": "https://github.com/chungsoftvn-com/EAB-Marketplace/tree/main/examples/hello-world",
+      "homepage": "https://github.com/chungsoftvn-com/EAB-Marketplace/tree/main/extensions/hello-world",
       "repository": "https://github.com/chungsoftvn-com/EAB-Marketplace"
     }
   ]

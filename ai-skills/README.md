@@ -12,4 +12,4 @@ Copy `ai-skills/eab-extension-creator/` into your agent's skills directory:
 ### Option 2: Direct Prompt
 Even without installing the skill, point your AI agent to `SKILL.md` and `examples/hello-world/`:
 
-> *"Read `ai-skills/eab-extension-creator/SKILL.md` and `examples/hello-world/`, then create a new EAB extension called `<Name>` that `<does X>`, and package it as `<id>.eabapk`."*
+> *"Read `ai-skills/eab-extension-creator/SKILL.md` and `extensions/hello-world/`, then create a new EAB extension called `<Name>` that `<does X>`, and package it as `<id>.eabapk`."*
